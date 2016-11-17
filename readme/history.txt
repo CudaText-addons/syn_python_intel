@@ -1,0 +1,9 @@
+
+2016.10.07
++ update Jedi for Py3.5
++ internal rework
++ cmd "Show docstring"
++ cmd "Show usages"
+
+1.0.0 (jan 2016)
+init

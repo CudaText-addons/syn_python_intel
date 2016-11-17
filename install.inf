@@ -1,0 +1,20 @@
+[info]
+title=Python Intel
+desc=Supports intelligence commands for Python: 1) auto-completion (Ctrl+Space), 2) goto-definition (Ctrl+Alt+click), 3) show function call-tip (Ctrl+Shift+Space), 4) show function doc-string, 5) show usages of name. Based on Jedi library.
+type=py-plugin
+subdir=syn_python_intel
+
+[ini]
+section=Events
+id=PythonIntel
+params=on_complete,on_goto_def,on_func_hint;Python;
+
+[ini10]
+section=Commands
+id=Python Intel\Show doc-string
+params=show_docstring;Python;
+
+[ini11]
+section=Commands
+id=Python Intel\Show usages
+params=show_usages;Python;
