@@ -44,6 +44,8 @@ class Command:
         while x>0 and is_wordchar(line[x-1]): x -= 1
         len1 = x0-x
 
+        after_dot = x>1 and line[x-1]=='.'
+
         #calc len right
 #        x = x0
 #        while x<len(line) and is_wordchar(line[x]): x += 1
@@ -51,7 +53,8 @@ class Command:
 
 #        print('len1', len1)
 #        print('len2', len2)
-        if len1<=0: return True
+        if len1<=0 and not after_dot:
+            return True
 
         text = handle_autocomplete(text, fn, y0, x0)
         if text:
